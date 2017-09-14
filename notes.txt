@@ -1,0 +1,9 @@
+Display bitmaps in Python
+    from PIL import Image
+    Image.frombytes('RGB', (480,272), buffer(ba), 'raw', 'BGR;16')
+    'BGR;16' - color information order
+
+Dumping and restoring memory in GDB
+    https://sourceware.org/gdb/onlinedocs/gdb/Dump_002fRestore-Files.html
+
+
