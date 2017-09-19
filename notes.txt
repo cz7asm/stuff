@@ -6,4 +6,9 @@ Display bitmaps in Python
 Dumping and restoring memory in GDB
     https://sourceware.org/gdb/onlinedocs/gdb/Dump_002fRestore-Files.html
 
+Macros in GDB
+    compile with KCFLAGS=-ggdb3
+    macro/info macro commands in gdb
 
+Search which package contains a certain file
+    dpkg-query -S '/usr/include/regex.h'
