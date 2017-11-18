@@ -12,3 +12,6 @@ Macros in GDB
 
 Search which package contains a certain file
     dpkg-query -S '/usr/include/regex.h'
+
+Convert logo for U-Boot
+    convert logo.bmp -colors 256  -type palette -compress none BMP3:logo_uboot.bmp
