@@ -15,3 +15,8 @@ Search which package contains a certain file
 
 Convert logo for U-Boot
     convert logo.bmp -colors 256  -type palette -compress none BMP3:logo_uboot.bmp
+
+U-Boot memory layout gotchas
+    Check where is stack located before relocation
+    After relocation stack is the last chunk of memory located above everything else
+    It's vital to use an image wrapper to load uboot by SPL than a hard coded size!
