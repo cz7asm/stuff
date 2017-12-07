@@ -20,3 +20,6 @@ U-Boot memory layout gotchas
     Check where is stack located before relocation
     After relocation stack is the last chunk of memory located above everything else
     It's vital to use an image wrapper to load uboot by SPL than a hard coded size!
+
+Find and sort files by their mtime
+    find . -name parser\* -mtime -1 -printf "%T+ %p\n" | sort
