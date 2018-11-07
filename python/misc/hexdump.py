@@ -11,5 +11,10 @@ def hexdump(s):
 	for i in range((len(s)+15)/16):
 		pos = i*16
 		dump16(s[pos:pos+16], pos)
+		
+def hexify(s):
+    h = " ".join([hex(x)[2:].zfill(2) for x in bytearray(s)])
+    return h
 
 hexdump('Timto te zdravim a posilam pozdravy z meho velmi limitovaneho hexeditoru!')
+print hexify('abcdef')
